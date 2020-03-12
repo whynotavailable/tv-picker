@@ -54,7 +54,7 @@ class Engine {
          return;
       }
 
-      const watchedEpisodes = this.watchedData[this.tvPicker.value];
+      const watchedEpisodes = this.watchedData[this.tvPicker.value] || [];
 
       const episodeList = currentShow.flatMap((val, index) => {
          let season = [];
